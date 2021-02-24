@@ -11,7 +11,7 @@ export class CostComponent
   title = 'angularphp';
     data = [];
   constructor(private http: HttpClient) {
-    this.http.get('https://axcora.com/ngchromisdb/cost.php').subscribe(data => {
+    this.http.get('localhost/connection/cost.php').subscribe(data => {
     this.data.push(data);
     console.log(this.data);
    

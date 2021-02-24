@@ -10,7 +10,7 @@ export class BuyComponent
   title = 'angularphp';
     data = [];
   constructor(private http: HttpClient) {
-    this.http.get('https://axcora.com/ngchromisdb/connect.php').subscribe(data => {
+    this.http.get('localhost/connection/connect.php').subscribe(data => {
     this.data.push(data);
     console.log(this.data);
    

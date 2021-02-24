@@ -11,7 +11,7 @@ export class CatComponent
   title = 'angularphp';
     data = [];
   constructor(private http: HttpClient) {
-    this.http.get('https://axcora.com/ngchromisdb/conn.php').subscribe(data => {
+    this.http.get('localhost/connection/conn.php').subscribe(data => {
     this.data.push(data);
     console.log(this.data);
    

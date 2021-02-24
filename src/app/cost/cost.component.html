@@ -1,0 +1,18 @@
+<div class="col-12 col-md-12">
+	<table class="table shadow rounded">
+		<thead>
+			<tr class="bg-danger text-white">
+				<th scope="col">Device</th>
+				<th scope="col">Start Date</th>
+				<th scope="col">End Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let mydata of data[0]">
+				<td class="text-white">{{mydata.host}}</td>
+				<td class="text-white">{{mydata.datestart}}</td>
+				<td class="text-white">{{mydata.dataend}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

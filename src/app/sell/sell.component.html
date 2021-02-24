@@ -1,0 +1,20 @@
+<div class="col-12 col-md-12">
+	<table class="table shadow rounded">
+		<thead>
+			<tr class="bg-danger text-white">
+				<th scope="col">Products</th>
+				<th scope="col">Ref</th>
+				<th scope="col">Code</th>
+				<th scope="col">Sell Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let mydata of data[0]">
+				<td class="text-white">{{mydata.name}}</td>
+				<td class="text-white">{{mydata.reference}}</td>
+				<td class="text-white">{{mydata.code}}</td>
+				<td class="text-white">{{mydata.pricesell}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
